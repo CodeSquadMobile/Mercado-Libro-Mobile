@@ -29,13 +29,15 @@
     <string name="enviar" formatted="false">Enviar Consulta</string>
 
     <!-- login -->
-    <string name="usuario">Usuario</string>
+    <string name="usuario">Email</string>
     <string name="contraseña">Contraseña</string>
-    <string name="inputUsuario">ingrese usuario</string>
+    <string name="nombrelogin">Nombre</string>
+    <string name="inputUsuario">ingrese su correo</string>
     <string name="inputNombre">ingrese su nombre</string>
     <string name="inputContra">ingrese contraseña</string>
     <string name="ingresar">Ingresar</string>
     <string name="registrarse">registrarse</string>
+    <string name="volver">volver</string>
     <string name="politicas">Politicas de Seguridad y Privacidad</string>
     <string name="seguridad_priv">Como cuidadamos tu privacidad.\n Ver contratos de adhesión (Ley Nº.24.240- Defensa del Consumidor.\n Términos y Condiciones.\n Accesibilidad.</string>
 

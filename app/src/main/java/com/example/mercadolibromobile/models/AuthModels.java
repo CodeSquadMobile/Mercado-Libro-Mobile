@@ -1,25 +1,6 @@
 package com.example.mercadolibromobile.models;
 
 public class AuthModels {
-
-    public static class LoginRequest {
-        private String email;
-        private String password;
-
-        public LoginRequest(String email, String password) {
-            this.email = email;
-            this.password = password;
-        }
-
-        public String getEmail() {
-            return email;
-        }
-
-        public String getPassword() {
-            return password;
-        }
-    }
-
     public static class LoginResponse {
         private String access;
         private String refresh;
@@ -58,10 +39,15 @@ public class AuthModels {
     }
 
     public static class SignupResponse {
-        private String message;
+        private String access;
+        private String refresh;
 
-        public String getMessage() {
-            return message;
+        public String getAccess() {
+            return access;
+        }
+
+        public String getRefresh() {
+            return refresh;
         }
     }
 }

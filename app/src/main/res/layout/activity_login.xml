@@ -63,8 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="@color/white"
-            android:backgroundTint="@color/white"
+            android:background="@drawable/borde_input"
             android:hint="@string/inputUsuario"
             android:textColor="@color/black"
             android:textStyle="bold"
@@ -102,19 +101,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:background="@drawable/borde_input"
             android:hint="@string/inputContra"
-            android:background="@color/white"
             android:textColor="@color/black"
             android:textStyle="bold" />
     </com.google.android.material.textfield.TextInputLayout>
-
 
     <TextView
         android:id="@+id/textViewName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/nombre"
+        android:text="@string/nombrelogin"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -131,7 +129,7 @@
         android:visibility="gone"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName"
         app:errorEnabled="true"
         app:errorTextColor="@color/rojo"
         app:boxStrokeColor="@color/amarillo">
@@ -141,12 +139,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:background="@drawable/borde_input"
             android:hint="@string/inputNombre"
-            android:background="@color/white"
             android:textColor="@color/black"
             android:textStyle="bold" />
     </com.google.android.material.textfield.TextInputLayout>
-
 
     <Button
         android:id="@+id/buttonMainAction"
@@ -160,7 +157,6 @@
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayoutName" />
-
 
     <Button
         android:id="@+id/buttonToggleMode"
@@ -179,12 +175,21 @@
         android:id="@+id/textView11"
         android:layout_width="300dp"
         android:layout_height="20dp"
-        android:textStyle="bold"
-        android:text="@string/politicas"
+        android:layout_marginBottom="36dp"
         android:gravity="center"
+        android:text="@string/politicas"
         android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
