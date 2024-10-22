@@ -5,7 +5,6 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Aquí puedes agregar tus vistas para mostrar las reseñas -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,53 +13,10 @@
         android:layout_gravity="center"
         android:textStyle="bold" />
 
-    <!-- Spinner con título "Mis Libros" -->
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewResenas"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mis Libros"
-        android:textSize="18sp"
-        android:textStyle="bold"
         android:layout_marginTop="16dp" />
-
-
-    <!-- EditText para la reseña del libro seleccionado -->
-    <EditText
-        android:id="@+id/editTextResena"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:hint="Reseña del libro seleccionado"
-        android:inputType="textMultiLine"
-        android:minLines="3"
-        android:gravity="top|start"
-        android:background="@android:drawable/edit_text" />
-
-    <!-- Separador -->
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="16dp"
-        android:background="@android:color/darker_gray" />
-
-    <!-- EditText para agregar una reseña -->
-    <EditText
-        android:id="@+id/editTextAgregarResena"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:hint="Agrega una reseña al libro"
-        android:inputType="textMultiLine"
-        android:minLines="3"
-        android:gravity="top|start"
-        android:background="@android:drawable/edit_text" />
-
-    <!-- Botón para agregar reseña -->
-    <Button
-        android:id="@+id/buttonAgregarResena"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Agregar reseña" />
 
 </LinearLayout>
