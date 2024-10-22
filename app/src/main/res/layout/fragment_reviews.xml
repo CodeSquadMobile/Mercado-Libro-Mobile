@@ -19,4 +19,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp" />
 
+    <Button
+        android:id="@+id/button_volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/azul_electrico"
+        android:text="Volver"
+        android:textColor="@color/white"
+        android:padding="12dp" />
+
 </LinearLayout>
